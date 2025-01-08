@@ -1,7 +1,7 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
 import { store } from "../store/store";
 
-axios.defaults.baseURL = "http://localhost:4000";
+axios.defaults.baseURL = "https://backend-taller3-latest-4i2n.onrender.com";
 
 const responseBody = (response) => response.data;
 axios.defaults.withCredentials = true;
