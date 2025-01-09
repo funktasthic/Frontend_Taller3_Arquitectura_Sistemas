@@ -9,8 +9,6 @@ import TableRow from "@mui/material/TableRow";
 import Navbar from "../../app/layout/Navbar";
 import agent from "../../app/api/agent";
 
-const pages = ["Usuarios", "Estacionamientos", "Reportes"];
-
 /**
  * @description
  * Este componente muestra el reporte de estacionamiento.
@@ -19,8 +17,6 @@ const pages = ["Usuarios", "Estacionamientos", "Reportes"];
 
 const History = () => {
   const [reservations, setReservations] = React.useState([]);
-  const [userName, setUserName] = React.useState("");
-  const [address, setAddress] = React.useState("");
 
   const getReservations = async () => {
     try {

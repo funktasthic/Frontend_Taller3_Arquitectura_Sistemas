@@ -1,4 +1,4 @@
-import axios, { AxiosError, AxiosResponse } from "axios";
+import axios from "axios";
 import { store } from "../store/store";
 
 axios.defaults.baseURL = "https://backend-taller3-latest-4i2n.onrender.com";
@@ -38,7 +38,7 @@ const GetUsers = {
 };
 
 const Update = {
-  update: (user) => requests.put(`user/updateUser/`, { user }),
+  update: (user) => requests.put(`user/updateUser`, { user }),
 };
 
 const GetParkings = {

@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import agent from "../../app/api/agent";
-import {
-  Button,
-  TextField,
-  Typography,
-  Grid,
-  Paper,
-  Dialog,
-} from "@mui/material";
+import { Button, TextField, Typography, Paper } from "@mui/material";
 import Box from "@mui/material/Box";
 import { Controller, useForm } from "react-hook-form";
 
@@ -19,8 +12,7 @@ import { Controller, useForm } from "react-hook-form";
 const EditForm = ({ parking, onClose }) => {
   const { control, handleSubmit, setError } = useForm({ mode: "onTouched" });
 
-  const [parkingId, setParkingId] = useState(parking.id);
-  const [parkings, setparkings] = useState(parking);
+  const [parkings] = useState(parking);
 
   const handleSubmitButton = (data) => {
     if (data["Pisos"] > 10) {

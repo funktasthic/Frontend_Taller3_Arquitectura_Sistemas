@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import { logout } from "../../features/account/userSlice";
 import { useDispatch } from "react-redux";
@@ -21,7 +20,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
   const pages = ["Usuarios", "Estacionamientos", "Reportes"];
-  const [auth, setAuth] = React.useState(true);
+  const [auth] = React.useState(true);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const dispatch = useDispatch();
@@ -64,6 +63,7 @@ const Navbar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img
+            alt="Logo"
             src={logo}
             width={52}
             height={46}

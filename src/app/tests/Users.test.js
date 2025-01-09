@@ -6,11 +6,10 @@ import {
   waitFor,
   act,
 } from "@testing-library/react";
-import Users from "../../features/account/Users";
 import { Provider } from "react-redux";
 import { store } from "../../app/store/store";
-import { RouterProvider, BrowserRouter } from "react-router-dom";
-import { router, AppRouter } from "../../app/router/Routes";
+import { RouterProvider } from "react-router-dom";
+import { router } from "../../app/router/Routes";
 import { PersistGate } from "redux-persist/integration/react";
 import { persistor } from "../../app/store/store";
 import userEvent from "@testing-library/user-event";

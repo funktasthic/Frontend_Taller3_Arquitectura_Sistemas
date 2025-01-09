@@ -6,8 +6,6 @@ import {
   waitFor,
   act,
 } from "@testing-library/react";
-import toast from "react-toastify";
-import Login from "../../features/auth/Login";
 import { Provider } from "react-redux";
 import { store } from "../../app/store/store";
 import { RouterProvider } from "react-router-dom";
