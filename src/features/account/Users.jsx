@@ -48,9 +48,7 @@ const Users = () => {
   const [helperName, setHelperName] = React.useState("");
   const [helperLastname, setHelperLastname] = React.useState("");
   const [helperEmail, setHelperEmail] = React.useState("");
-  const [setHelperPriority] = React.useState("");
   const [currentUserId, setCurrentUserId] = React.useState(null);
-  const [setCurrentUser] = React.useState({});
   const [formData, setFormData] = React.useState({
     name: "",
     lastname: "",
@@ -149,7 +147,6 @@ const Users = () => {
   };
 
   const handleClickOpenEdit = (user, userId) => {
-    setCurrentUser(user);
     setCurrentUserId(userId);
     setFormData({
       name: user.name,
@@ -170,7 +167,6 @@ const Users = () => {
     setHelperEmail("");
     setHelperName("");
     setHelperLastname("");
-    setHelperPriority();
     setOpenEdit(false);
   };
 
